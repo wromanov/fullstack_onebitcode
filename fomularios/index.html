@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formuláro</title>
+  </head>
+  <body>
+    <h1>Formumários no HTML</h1>
+
+    <!--Ação que deseja executar, ou seja o destino-->
+    <form action="http://google.com/search" method="get">
+      <!--A tag <input> em HTML é um elemento fundamental para a criação
+      de formulários interativos. Ela serve para criar campos onde os 
+      usuários podem inserir dados, como texto, números, datas, e-mails, entre outros. 
+      Esses dados podem ser enviados para um servidor para processamento posterior.
+      O atributo type da tag <input> define o tipo de dado que o 
+      campo espera receber e como ele será renderizado no navegador.-->
+      <label for="pesquisar">Pesquise no google</label>
+      <input
+        type="text"
+        name="q"
+        id="pesquisar"
+        placeholder="Digite sua pesquisa"
+      />
+      <button type="submit">Pesquisar</button>
+    </form>
+  </body>
+</html>
