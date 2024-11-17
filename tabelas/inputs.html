@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs do HTML</title>
+  </head>
+  <body>
+    <h1>Inputs do HTML</h1>
+    <form>
+      <!--Campo de Texto-->
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Insira seu nome"
+        required
+      />
+      <br /><br />
+
+      <!--Campo de E-mail-->
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Insira seu e-mail"
+        required
+      />
+      <br /><br />
+
+      <!--Campo de Senha-->
+      <label for="passwd">Senha:</label>
+      <input
+        type="password"
+        name="senha"
+        id="passwd"
+        placeholder="Insira sua senha"
+        required
+      />
+      <br /><br />
+
+
+      <!--Campo de Seleção - Radio-->
+      <label>Genero:</label><br />
+      <input type="radio" name="genero" id="male" value="f" />
+      <label for="male">Masculino</label><br />
+
+      <input type="radio" name="genero" id="female" value="f" />
+      <label for="female">Feminino</label><br /><br />
+
+
+      <!--Campo de seleção Multipla (Checkbox)-->
+      <label>Interesses:</label><br />
+
+      <input type="checkbox" id="backend" value="backend" name="interesses" />
+      <label for="backend">Back-end</label>
+
+      <input type="checkbox" id="frontend" value="frontend" name="interesses" />
+      <label for="frontend">Front-end</label>
+
+      <input type="checkbox" id="mobile" value="mobile" name="interesses" />
+      <label for="mobile">Mobile</label><br /><br />
+      
+
+      <!--Campo de data-->
+      <label for="dataNascimento">Data de Nascimento:</label><br>
+      <input type="date" id="dataNascimento" name="Nascimento" required> 
+      <br><br>
+
+      <!--Campo de Upload de Arquivos-->
+      <label for="fotoPerfil">Foto de Perfil:</label><br>
+      <input type="file" name="avatar" id="fotoPerfil"><br><br>
+
+
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
